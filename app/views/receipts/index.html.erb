@@ -1,0 +1,43 @@
+<h1>Listing receipts</h1>
+
+<table>
+  <tr>
+    <th>Tax year</th>
+    <th>Cat code</th>
+    <th>Rec details</th>
+    <th>Inv rec no</th>
+    <th>Rec amount</th>
+    <th>Gst cat</th>
+    <th>Gst amount</th>
+    <th>Bankings</th>
+    <th>Comments</th>
+    <th>Rec month</th>
+    <th>Rec day</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @receipts.each do |receipt| %>
+  <tr>
+    <td><%= receipt.tax_year_id %></td>
+    <td><%= receipt.cat_code_id %></td>
+    <td><%= receipt.rec_details %></td>
+    <td><%= receipt.inv_rec_no %></td>
+    <td><%= receipt.rec_amount %></td>
+    <td><%= receipt.gst_cat_id %></td>
+    <td><%= receipt.gst_amount %></td>
+    <td><%= receipt.bankings %></td>
+    <td><%= receipt.comments %></td>
+    <td><%= receipt.rec_month %></td>
+    <td><%= receipt.rec_day %></td>
+    <td><%= link_to 'Show', receipt %></td>
+    <td><%= link_to 'Edit', edit_receipt_path(receipt) %></td>
+    <td><%= link_to 'Destroy', receipt, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Receipt', new_receipt_path %>

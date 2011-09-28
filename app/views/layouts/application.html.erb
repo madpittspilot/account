@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ 
+  <div id="tabs-main">
+    <%= tabs_tag do |tab| %>
+      <%= tab.home      'Home', "/homes#show" %>
+      <%= tab.payment   'Payments', "/payments#update_payments" %>
+      <%= tab.receipt   'Receipts', receipts_path %>
+    <% end %>
+  </div>
+ 
+
+
+ 
+<br /><br />  
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tax_year_id: 1
+  cat_code_id: 1
+  rec_details: MyString
+  inv_rec_no: MyString
+  rec_amount: 9.99
+  gst_cat_id: 1
+  gst_amount: 9.99
+  bankings: 9.99
+  comments: MyText
+  rec_month: 1
+  rec_day: 1
+
+two:
+  tax_year_id: 1
+  cat_code_id: 1
+  rec_details: MyString
+  inv_rec_no: MyString
+  rec_amount: 9.99
+  gst_cat_id: 1
+  gst_amount: 9.99
+  bankings: 9.99
+  comments: MyText
+  rec_month: 1
+  rec_day: 1

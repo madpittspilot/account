@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+#tabs-main ul { margin: 0; padding: 0; list-style-type: none; }
+#tabs-main ul li { 
+	position: relative; 
+	float: left; 
+	border:1px solid #0F2100;
+	/* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #7CFF00, #4B9A00);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #7CFF00, #4B9A00);
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #7CFF00, #4B9A00);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #7CFF00, #4B9A00);
+}
+
+#tabs-main ul li a { display: block; padding: 10px; outline: none; text-decoration: none; text-shadow: 0px 1px 1px #F2FFC1; color: #0F2100;}
+
+#tabs-main ul li a:hover { 
+	background: -webkit-linear-gradient(top, #D9FF4C, #50A600);
+	background: -moz-linear-gradient(top, #D9FF4C, #50A600);
+	background: -ms-linear-gradient(top, #D9FF4C, #50A600);
+	background: -o-linear-gradient(top, #D9FF4C, #50A600);
+	text-decoration: none; text-shadow: 1px 1px 2px #F2FFC1;	
+}
+
+#tabs-main li.current { 
+	padding: 10px; 
+	position: relative; 
+	border: solid 1px;
+	background: -webkit-linear-gradient(top, #50A600, #D9FF4C);
+	background: -moz-linear-gradient(top, #50A600, #D9FF4C);
+	background: -ms-linear-gradient(top, #50A600, #D9FF4C);
+	background: -o-linear-gradient(top, #50A600, #D9FF4C);
+	color: #DE0000;
+	border:1px solid #0F2100;
+	text-shadow: -1px -1px 2px #FCFFF0;
+}
+
+
+#tabs-paymonth ul { margin: 0; padding: 0; list-style-type: none; }
+#tabs-paymonth ul li { 
+	position: relative; 
+	float: left; 
+	border:1px solid #0F2100;
+  background: -webkit-linear-gradient(top, #FF9B65, #AF3D00);
+  background: -moz-linear-gradient(top, #7CFF00, #4B9A00);
+  background: -ms-linear-gradient(top, #7CFF00, #4B9A00);
+  background: -o-linear-gradient(top, #7CFF00, #4B9A00);
+}
+
+#tabs-paymonth ul li a { display: block; padding-left: 14px; padding-right: 14px; padding-top: 3px; padding-bottom: 3px; outline: none; text-decoration: none; text-shadow: 0px 1px 1px #FFC09E; color: #2E0000;}
+
+#tabs-paymonth ul li a:hover { 
+	background: -webkit-linear-gradient(top, #D9FF4C, #50A600);
+	background: -moz-linear-gradient(top, #D9FF4C, #50A600);
+	background: -ms-linear-gradient(top, #D9FF4C, #50A600);
+	background: -o-linear-gradient(top, #D9FF4C, #50A600);
+	text-decoration: none; text-shadow: 1px 1px 2px #F2FFC1;	
+}
+
+#tabs-paymonth li.current { 
+	padding: 3px; 
+	position: relative; 
+	border: solid 1px;
+	background: -webkit-linear-gradient(top, #50A600, #D9FF4C);
+	background: -moz-linear-gradient(top, #50A600, #D9FF4C);
+	background: -ms-linear-gradient(top, #50A600, #D9FF4C);
+	background: -o-linear-gradient(top, #50A600, #D9FF4C);
+	color: #DE0000;
+	border:1px solid #0F2100;
+	text-shadow: -1px -1px 2px #FCFFF0;
+}
+
+
+
+/*
+#tabs-main ul { margin: 0; padding: 0; }
+#tabs-main ul li { display: inline-block; background: #B40404; border: solid 1px; border-bottom: none; }
+#tabs-main ul li a { display: block; padding: 5px; outline: none; text-decoration: none; }
+#tabs-main ul li a:hover { background: #FF0000; text-decoration: none; }
+#tabs-main ul li.current { background: #FF0000; padding-top: 8px; position: relative; top: 1px; color: #fff;}
+#tabs-main ul li a.current { font-weight: bold; }
+#tabs-main .panel-container { border: solid 1px; padding: 0 10px; }
+
+#tabs-main ul li a:visited { font-weight: bold; text-shadow: 6px 2px 4px #F2FFC1;	color: #FF0000;}
+#tabs-main ul li a:visited {text-decoration: none;}
+#tabs-main a.current { font-weight: bold; text-shadow: -1px -1px 2px #FCFFF0;	color: #F80303;	}
+
+#tabs-paymonth .panel-container { border: solid 1px; padding: 0 3px; }
+
+#tabs-main .panel-container { border: solid 1px; padding: 0 10px; }
+*/

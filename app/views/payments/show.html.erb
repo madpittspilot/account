@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tax year:</b>
+  <%= @payment.tax_year_id %>
+</p>
+
+<p>
+  <b>Cat code:</b>
+  <%= @payment.cat_code_id %>
+</p>
+
+<p>
+  <b>Pay details:</b>
+  <%= @payment.pay_details %>
+</p>
+
+<p>
+  <b>Pay method:</b>
+  <%= @payment.pay_method_id %>
+</p>
+
+<p>
+  <b>Ref no:</b>
+  <%= @payment.ref_no %>
+</p>
+
+<p>
+  <b>Pay amount:</b>
+  <%= @payment.pay_amount %>
+</p>
+
+<p>
+  <b>Gst cat:</b>
+  <%= @payment.gst_cat_id %>
+</p>
+
+<p>
+  <b>Gst amount:</b>
+  <%= @payment.gst_amount %>
+</p>
+
+<p>
+  <b>Priv use percent:</b>
+  <%= @payment.priv_use_percent %>
+</p>
+
+<p>
+  <b>Priv use amount:</b>
+  <%= @payment.priv_use_amount %>
+</p>
+
+<p>
+  <b>Pay month:</b>
+  <%= @payment.pay_month %>
+</p>
+
+<p>
+  <b>Pay day:</b>
+  <%= @payment.pay_day %>
+</p>
+
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>

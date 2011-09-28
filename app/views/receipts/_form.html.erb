@@ -1,0 +1,61 @@
+<%= form_for(@receipt) do |f| %>
+  <% if @receipt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@receipt.errors.count, "error") %> prohibited this receipt from being saved:</h2>
+
+      <ul>
+      <% @receipt.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tax_year_id %><br />
+    <%= f.number_field :tax_year_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cat_code_id %><br />
+    <%= f.number_field :cat_code_id %>
+  </div>
+  <div class="field">
+    <%= f.label :rec_details %><br />
+    <%= f.text_field :rec_details %>
+  </div>
+  <div class="field">
+    <%= f.label :inv_rec_no %><br />
+    <%= f.text_field :inv_rec_no %>
+  </div>
+  <div class="field">
+    <%= f.label :rec_amount %><br />
+    <%= f.text_field :rec_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :gst_cat_id %><br />
+    <%= f.number_field :gst_cat_id %>
+  </div>
+  <div class="field">
+    <%= f.label :gst_amount %><br />
+    <%= f.text_field :gst_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :bankings %><br />
+    <%= f.text_field :bankings %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+  <div class="field">
+    <%= f.label :rec_month %><br />
+    <%= f.number_field :rec_month %>
+  </div>
+  <div class="field">
+    <%= f.label :rec_day %><br />
+    <%= f.number_field :rec_day %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

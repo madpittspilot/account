@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tax year:</b>
+  <%= @receipt.tax_year_id %>
+</p>
+
+<p>
+  <b>Cat code:</b>
+  <%= @receipt.cat_code_id %>
+</p>
+
+<p>
+  <b>Rec details:</b>
+  <%= @receipt.rec_details %>
+</p>
+
+<p>
+  <b>Inv rec no:</b>
+  <%= @receipt.inv_rec_no %>
+</p>
+
+<p>
+  <b>Rec amount:</b>
+  <%= @receipt.rec_amount %>
+</p>
+
+<p>
+  <b>Gst cat:</b>
+  <%= @receipt.gst_cat_id %>
+</p>
+
+<p>
+  <b>Gst amount:</b>
+  <%= @receipt.gst_amount %>
+</p>
+
+<p>
+  <b>Bankings:</b>
+  <%= @receipt.bankings %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @receipt.comments %>
+</p>
+
+<p>
+  <b>Rec month:</b>
+  <%= @receipt.rec_month %>
+</p>
+
+<p>
+  <b>Rec day:</b>
+  <%= @receipt.rec_day %>
+</p>
+
+
+<%= link_to 'Edit', edit_receipt_path(@receipt) %> |
+<%= link_to 'Back', receipts_path %>

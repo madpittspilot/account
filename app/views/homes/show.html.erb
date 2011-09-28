@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Business name:</b>
+  <%= @home.business_name %>
+</p>
+
+<p>
+  <b>Tfn:</b>
+  <%= @home.tfn %>
+</p>
+
+<p>
+  <b>Email1:</b>
+  <%= @home.email1 %>
+</p>
+
+<p>
+  <b>Email2:</b>
+  <%= @home.email2 %>
+</p>
+
+<p>
+  <b>Phone1:</b>
+  <%= @home.phone1 %>
+</p>
+
+<p>
+  <b>Phone2:</b>
+  <%= @home.phone2 %>
+</p>
+
+<p>
+  <b>Abn:</b>
+  <%= @home.abn %>
+</p>
+
+<p>
+  <b>Street1:</b>
+  <%= @home.street1 %>
+</p>
+
+<p>
+  <b>Street2:</b>
+  <%= @home.street2 %>
+</p>
+
+<p>
+  <b>Suburb:</b>
+  <%= @home.suburb %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @home.state_id %>
+</p>
+
+<p>
+  <b>Current year:</b>
+  <%= @home.current_tax_year_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_home_path(@home) %> |
+<%= link_to 'Back', homes_path %>

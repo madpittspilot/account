@@ -1,0 +1,45 @@
+<h1>Listing homes</h1>
+
+<table>
+  <tr>
+    <th>Business name</th>
+    <th>Tfn</th>
+    <th>Email1</th>
+    <th>Email2</th>
+    <th>Phone1</th>
+    <th>Phone2</th>
+    <th>Abn</th>
+    <th>Street1</th>
+    <th>Street2</th>
+    <th>Suburb</th>
+    <th>State</th>
+    <th>Current year</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @homes.each do |home| %>
+  <tr>
+    <td><%= home.business_name %></td>
+    <td><%= home.tfn %></td>
+    <td><%= home.email1 %></td>
+    <td><%= home.email2 %></td>
+    <td><%= home.phone1 %></td>
+    <td><%= home.phone2 %></td>
+    <td><%= home.abn %></td>
+    <td><%= home.street1 %></td>
+    <td><%= home.street2 %></td>
+    <td><%= home.suburb %></td>
+    <td><%= home.state_id %></td>
+    <td><%= home.current_tax_year_id %></td>
+    <td><%= link_to 'Show', home %></td>
+    <td><%= link_to 'Edit', edit_home_path(home) %></td>
+    <td><%= link_to 'Destroy', home, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Home', new_home_path %>

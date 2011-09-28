@@ -1,0 +1,20 @@
+<% form_for :payment, :url => {:action => 'update_payments'} do -%>
+  <table>
+    <tr>
+      <th>Current</th>
+      <th>Publication date</th>
+      <th>Name</th>
+    </tr>
+    <% @payments.each do |payment| %>
+      <% fields_for "payment[]", report do |payment_fields| %>
+    <tr>
+      <td><%= payment_fields.tax_year_id %></td>
+      <td><%= payment_fields.cat_code_id %></td>
+      <td><%= payment_fields.pay_details %></td>
+
+    </tr>
+      <% end %>
+    <% end %>
+  </table>
+ <%= submit_tag 'Update' %>
+<% end %>

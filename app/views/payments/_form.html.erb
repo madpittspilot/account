@@ -1,0 +1,65 @@
+<%= form_for(@payment) do |f| %>
+  <% if @payment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@payment.errors.count, "error") %> prohibited this payment from being saved:</h2>
+
+      <ul>
+      <% @payment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tax_year_id %><br />
+    <%= f.number_field :tax_year_id %>
+  </div>
+  <div class="field">
+    <%= f.label "day" %><br />
+    <%= f.number_field :pay_day %>
+  </div>
+  <div class="field">
+    <%= f.label :cat_code_id %><br />
+    <%= f.number_field :cat_code_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pay_details %><br />
+    <%= f.text_field :pay_details %>
+  </div>
+  <div class="field">
+    <%= f.label :pay_method_id %><br />
+    <%= f.number_field :pay_method_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ref_no %><br />
+    <%= f.text_field :ref_no %>
+  </div>
+  <div class="field">
+    <%= f.label :pay_amount %><br />
+    <%= f.text_field :pay_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :gst_cat_id %><br />
+    <%= f.number_field :gst_cat_id %>
+  </div>
+  <div class="field">
+    <%= f.label :gst_amount %><br />
+    <%= f.text_field :gst_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :priv_use_percent %><br />
+    <%= f.text_field :priv_use_percent %>
+  </div>
+  <div class="field">
+    <%= f.label :priv_use_amount %><br />
+    <%= f.text_field :priv_use_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :pay_month %><br />
+    <%= f.number_field :pay_month %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
